@@ -1,0 +1,21 @@
+{
+    "author": "yulingtianxia@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "moha",
+    "pebble": {
+        "displayName": "MoHa",
+        "enableMultiJS": false,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "uuid": "1e91f008-d28e-4b8c-8bd9-c30babcf0014",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
