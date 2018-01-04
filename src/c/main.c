@@ -21,9 +21,9 @@ static void main_window_load(Window *window) {
   layer_add_child(window_layer, bitmap_layer_get_layer(s_background_layer));
   
   s_left_time_layer = text_layer_create(
-      GRect(bounds.size.w / 4 - 50, PBL_IF_ROUND_ELSE(38, 32), 100, 50));
+      GRect((bounds.size.w - 144) / 2 + 144 / 4 - 25, (bounds.size.h - 108) / 2 + 5, 50, 36));
   s_right_time_layer = text_layer_create(
-      GRect(bounds.size.w / 4 * 3 - 50, PBL_IF_ROUND_ELSE(38, 32), 100, 50));
+      GRect((bounds.size.w - 144) / 2 + 144 / 4 * 3 - 25, (bounds.size.h - 108) / 2 + 5, 50, 36));
 
   text_layer_set_background_color(s_left_time_layer, GColorClear);
   text_layer_set_text_color(s_left_time_layer, GColorBlack);
@@ -43,7 +43,7 @@ static void main_window_load(Window *window) {
   
   s_nose_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NOSE);
   s_nose_empty_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_ADD_ONE);
-  s_nose_layer = bitmap_layer_create(GRect(bounds.size.w / 2 - 16.5, PBL_IF_ROUND_ELSE(98, 92), 33, 14));
+  s_nose_layer = bitmap_layer_create(GRect(bounds.size.w / 2 - 16.5, (bounds.size.h - 108) / 2 + 60, 33, 14));
   bitmap_layer_set_bitmap(s_nose_layer, s_nose_bitmap);
   
   layer_add_child(window_layer, bitmap_layer_get_layer(s_nose_layer));
