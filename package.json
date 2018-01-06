@@ -5,11 +5,17 @@
     "name": "moha",
     "pebble": {
         "displayName": "MoHa : +1s For Haha",
-        "enableMultiJS": false,
+        "enableMultiJS": true,
         "messageKeys": [],
         "projectType": "native",
         "resources": {
             "media": [
+                {
+                    "file": "images/moha-eye.png",
+                    "name": "IMAGE_EYE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
                 {
                     "file": "images/1s.png",
                     "name": "IMAGE_ADD_ONE",
@@ -43,5 +49,5 @@
             "watchface": true
         }
     },
-    "version": "1.1.0"
+    "version": "1.2.0"
 }
